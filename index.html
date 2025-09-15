@@ -121,8 +121,6 @@ const CometLogo = ({ className }) => (
     const Hero = () => (
       <section className="text-center py-16">
         <div className="flex justify-center items-center gap-4 mb-6">
-          <TTULogo className="h-10 w-10 text-red-500" />
-          <span className="text-3xl font-thin text-gray-500">+</span>
           <PerplexityLogo className="h-12 w-12 text-white" />
         </div>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight">
@@ -133,8 +131,9 @@ const CometLogo = ({ className }) => (
           {' '}Free!
         </h1>
         <p className="mt-6 max-w-2xl mx-auto text-lg sm:text-xl text-gray-400">
-         $200 worth of ,{' '}
-          <span className="font-semibold text-white">1 year of Perplexity Pro for FREE</span> when you try the new Comet desktop app.
+        <span className="font-semibold text-white">$200 worth</span> of ,{' '}
+          <span className="font-semibold text-white">1 year of Perplexity Pro for FREE</span> when you try the new Comet desktop app.<br></br>
+          Follow the steps below or follow the steps in the video to claim the free perplexity pro subscription for a year.
         </p> 
         <div className="mt-10">
           <Button 
@@ -184,7 +183,7 @@ const CometLogo = ({ className }) => (
 
     return (
         <section className="py-16">
-            <h2 className="text-3xl font-bold text-center text-white mb-12">How to Claim Your Free Year</h2>
+            <h2 className="text-3xl font-bold text-center text-white mb-12">Steps to Claim Your Free Year</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {STEPS.map((step) => (
                     <Card key={step.step} className="flex flex-col">
@@ -350,4 +349,5 @@ const CometLogo = ({ className }) => (
   </script>
 </body>
 </html>
+
 
